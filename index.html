@@ -11,19 +11,19 @@
 	<script src="js/index.js"></script>
 </head>
 <body>
-	<section class="intro flex center-col" id="home">
-		<div class="flex center-col">
-				<h1>Hi. I'm Victor.</h1>
+	<section class="intro container" id="home">
+		<div class="container">
+				<h1>Hi. I'm Victor.<br>I live in Austin. Love it!!</h1>
 				<a class="arr-button-scroll" href="#about"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
 		</div>
 	</section>
-	<nav class="flex nav-bar">
+	<nav class="container nav-bar">
 		<div id="hamburger-icon">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<div class="flex center-row nav-head">
+		<div class="container container-row nav-head">
 			<a class="nav-title" href="#home">Home</a>
 			<a class="nav-title" href ="#about">About Me</a>
 			<a class="nav-title" href="#projects">Projects</a>
@@ -31,27 +31,80 @@
 		</div>
 	</nav>
 	<section id="about">
-		<h3 class="header">About Me</h3>
+		<div>
+			<h3 class="header">About Me</h3>
+		</div>
 		<div class="about-body">
-			<div>
-				<div class="flex center-col">
-						<img src="img/me.jpeg" id="me">
-						<p>I am an entry level full stack developer.</p>
-						<p>I want to build things</p>
+			<div class="container container-row wrapper">
+				<div class="flex-50">
+					<img src="img/me.jpeg" id="me">
+					<p>I am an entry level full stack developer.</p>
+					<p>I want to build things</p>
+				</div>
+				<div class="flex-50">
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 80%">
+							<span class="tag">HTML</span>
+						</div>
+						<span class="padding">80%</span>
 					</div>
-					<div class="flex center-col bar">Bars</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 70%">
+							<span class="tag">CSS</span>
+						</div>
+						<span class="padding">70%</span>
+					</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 70%">
+							<span class="tag">Javascript</span>
+						</div>
+						<span class="padding">70%</span>
+					</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 60%">
+							<span class="tag">React JS</span>
+						</div>
+						<span class="padding">60%</span>
+					</div>	
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 70%">
+							<span class="tag">Node JS</span>
+						</div>
+						<span class="padding">70%</span>
+					</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 60%">
+							<span class="tag">Python</span>
+						</div>
+						<span class="padding">60%</span>
+					</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 50%">
+							<span class="tag">MongoDB</span>
+						</div>
+						<span class="padding">50%</span>
+					</div>
+					<div class=" container container-row flex-bar">
+						<div class="fill" style="width: 50%">
+							<span class="tag">SQL</span>
+						</div>
+						<span class="padding">50%</span>
+					</div>			
+				</div>
 			</div>
 			<div class="education">
-				<h3>Educations</h3>
-				<div>
-					<img src="img/gt.png" id="gt">
-					<p>Master of Science in Computer Science</p>
-					<p>Present - 2021</p>
-				</div>
-				<div>
-					<img src="img/udacity.jpg" id="udacity">
-					<p>Full Stack Web Developer Nanodegree</p>
-					<i class="fa fa-graduation-cap"></i><h4>2018</h4>
+				<h3 class="header">Educations</h3>
+				<div class="container container-row">
+					<div>
+							<img src="img/gt.png" id="gt">
+							<p>Master of Science in Computer Science</p>
+							<p>Present - 2021</p>
+						</div>
+						<div>
+							<img src="img/udacity.jpg" id="udacity">
+							<p>Full Stack Web Developer Nanodegree</p>
+							<i class="fa fa-graduation-cap"></i><h4>2018</h4>
+						</div>
 				</div>
 			</div>
 		</div>
