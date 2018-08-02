@@ -13,8 +13,10 @@
 <body>
 	<section class="intro container" id="home">
 		<div class="container">
-				<h1>Hi. I'm Victor.<br>I live in Austin. I Love it!!</h1>
-				<a class="arr-button-scroll" href="#about"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
+				<h1 class="animate-twist"><span>H</span><span>i</span><span>.</span> <span>I</span><span>'</span><span>m</span> <span>V</span><span>i</span><span>c</span><span>t</span><span>o</span><span>r</span><span>.</span><br>
+					<span>I</span> <span>l</span><span>i</span><span>v</span><span>e</span> <span>i</span><span>n</span> <span>A</span><span>u</span><span>s</span><span>t</span><span>i</span><span>n</span><span>.</span><br>
+					<span>I</span> <span>L</span><span>o</span><span>v</span><span>e</span> <span>i</span><span>t</span><span>!</span><span>!</span></h1>
+				<a class="arr-button-scroll"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 	<nav class="container nav-bar">
@@ -25,17 +27,20 @@
 		</div>
 		<div class="container container-row nav-head">
 			<a class="nav-title bold" href="#home">Home</a>
-			<a class="nav-title bold" href ="#about">About Me</a>
+			<a class="nav-title bold about-me">About Me</a>
 			<a class="nav-title bold" href="#contact">Contact</a>
 		</div>
 	</nav>
 	<section id="about">
 		<div>
-			<h1 class="header">Me</h1>
+			<h1 class="header-top">About Me</h1>
 		</div>
 		<div class="about-body">
 			<div class="container container-row wrapper">
-				<div class="flex-50">
+				<div class="flex-50 info-me">
+					<div>
+						<h1 class="header">I am</h1>
+					</div>
 					<img src="img/me.jpeg" id="me">
 					<p>
 						I am an entry level full stack developer.<br>
@@ -44,6 +49,9 @@
 					</p>
 				</div>
 				<div class="flex-50">
+					<div>
+						<h1 class="header">I speak</h1>
+					</div>
 					<div class=" container container-row flex-bar">
 						<div class="fill" style="width: 80%">
 							<span class="tag">HTML</span>
@@ -94,42 +102,59 @@
 					</div>			
 				</div>
 			</div>
-			<div class="education">
-				<h1 class="header">Educations</h1>
+			<div class="about2">
+				<h1 class="header">I learned</h1>
 				<div class="container container-row">
-					<div class="flex-50">
+						<div class="school">
 							<img src="img/gt.png" id="gt">
 							<p>
-								Georgia Institute of Technology<br>
+								<strong><i></i>Georgia Institute of Technology</strong><br>
 								Master of Science in Computer Science<br>
-								Present - 20201
+								Present - 2021
 							</p>
 						</div>
-						<div class="flex-50">
+						<div class="school">
 							<img src="img/udacity.jpg" id="udacity">
 							<p>
-								Udacity<br>
+								<strong>Udacity</strong><br>
 								Full Stack Web Developer Nanodegree<br>
 								<i class="fa fa-graduation-cap"></i> 2018
+							</p>
+						</div>
+						<div class="school">
+							<img src="img/uml.png" id="uml">
+							<p>
+								<strong>University of Massachusetts Lowell</strong><br>
+								Bachelor of Science in Plastics Engineering<br>
+								2006 - 2010
 							</p>
 						</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contact container">
-		<div class="container">
-			<h1 class="header">Contact</h1>
+	<section id="contact">
+		<div>
+			<h1 class="header-top">Contact</h1>
 		</div>
-		<form class="form container">
-			<input type="text" name="name" placeholder="Name" required>
-			<input type="email" name="email" placeholder="Email" required>
+		<div class="container">
+			<h1>Give me a try ?</h1>
+		</div>
+		<form id="contact-form" class="container">
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="email" placeholder="Email">
 			<textarea type="text" name="message" placeholder="Your message"></textarea>
+			<div class="success-modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Your message is sent.</p>
+				</div>
+			</div>
 			<button type="submit">Submit</button>
 		</form>
 	</section>
 	<footer>
-		VICTOR NHEM. @2018
+		Victor Nhem @2018
 	</footer>
 </body>
 </html>
