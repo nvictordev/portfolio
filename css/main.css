@@ -237,6 +237,17 @@ font-size: 2em;
 
 }
 
+@media screen and (max-width: 769px) {
+	nav #hamburger-icon {
+		left: 5vw;
+		display: block;
+		position: absolute;
+	}
+	nav .nav-head {
+		display: none;
+	}
+}
+
 #hamburger-icon {
 	position: relative;
 	width: 30px;
@@ -249,7 +260,7 @@ font-size: 2em;
 	margin: 3px 0px;
 	height: 3px;
 	width: 100%;
-	background-color: black;
+	background-color: white;
 	display: block;
 	transition: 5s ease-in-out;
 }
