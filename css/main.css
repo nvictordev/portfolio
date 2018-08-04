@@ -130,6 +130,10 @@ body {
 	overflow-x: hidden;
 }
 
+.overflow {
+	overflow-x: hidden;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -272,7 +276,7 @@ font-size: 2em;
 section:nth-of-type(2) .tag {
 	color: white;
 	background-color: lightslategray;
-	width: 25%;
+	width: 30%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -294,11 +298,74 @@ section:nth-of-type(2) .padding {
 	margin: 1em auto;
 }
 
+@media screen and (max-width: 769px) {
+	h1 {
+		font-size: 5vw;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about-body .flex-50:nth-of-type(1),
+	.about-body .flex-50:nth-of-type(2) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 4vw;
+		width: 95%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about-body .flex-bar {
+		width: 90%;
+		height: 7vw;
+		margin: 0 auto 2vw;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about-body .fill {
+		height: inherit;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about2 {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about2 .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 3vw;
+		width: 95%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.about2 .container .school {
+		width: 90%;
+	}
+}
+
 .school {
 	width: 45%;
 	border: 4px solid black;
 	margin: 0 1em 4em;
 	box-shadow: .5em .5em .5em black;
+}
+
+@media screen and (max-width: 769px) {
+	img {
+		max-width: 50%;
+	}
 }
 
 section:nth-last-of-type(2) img {
@@ -312,6 +379,24 @@ section:nth-of-type(3) {
 
 section:nth-of-type(3) .container:nth-child(2) {
 	height: 4em;
+}
+
+@media screen and (max-width: 769px) {
+	form {
+		font-size: 4vw;
+		width: 95%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	form input, form textarea {
+		max-width: 90%;
+	}
 }
 
 section:nth-of-type(3) div:nth-child(2)  {
@@ -342,6 +427,14 @@ form button {
 	margin-bottom: 2em;
 	font-weight: bold;
 	width: 6em;
+	background-color: gray;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+	form .modal-content {
+		width: 70%;
+	}	
 }
 
 .success-modal {
@@ -390,6 +483,12 @@ form button {
 
 .modal-content p {
 	line-height: 3em;
+}
+
+@media screen and (max-width: 769px) {
+	footer {
+		font-size: 2vw;
+	}
 }
 
 footer {

@@ -42,9 +42,10 @@ $(function() {
     if (winPos >= navHeight && winPos > recentPos) {
       $('nav').addClass('fixed');
     } 
-    if (winPos < navHeight) {
+    if (winPos < navHeight && winPos < recentPos) {
       $('nav').removeClass('fixed');
     }
+    recentPos = winPos;
   })
 
 })

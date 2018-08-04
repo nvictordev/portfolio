@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Victor Nhem</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -11,161 +12,163 @@
 	<script src="js/index.js"></script>
 </head>
 <body>
-	<section class="intro container" id="home">
-		<div class="container">
-				<h1 class="animate-twist"><span>H</span><span>i</span><span>.</span> <span>I</span><span>'</span><span>m</span> <span>V</span><span>i</span><span>c</span><span>t</span><span>o</span><span>r</span><span>.</span><br>
-					<span>I</span> <span>l</span><span>i</span><span>v</span><span>e</span> <span>i</span><span>n</span> <span>A</span><span>u</span><span>s</span><span>t</span><span>i</span><span>n</span><span>.</span><br>
-					<span>I</span> <span>L</span><span>o</span><span>v</span><span>e</span> <span>i</span><span>t</span><span>!</span><span>!</span></h1>
-				<a class="arr-button-scroll"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
-		</div>
-	</section>
-	<nav class="container nav-bar">
-		<div id="hamburger-icon">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<div class="container container-row nav-head">
-			<a class="nav-title bold" href="#home">Home</a>
-			<a class="nav-title bold about-me">About Me</a>
-			<a class="nav-title bold contact">Contact</a>
-		</div>
-	</nav>
-	<section id="about">
-		<div>
-			<h1 class="header-top">About Me</h1>
-		</div>
-		<div class="about-body">
-			<div class="container container-row wrap wrapper">
-				<div class="flex-50 info-me">
-					<div>
-						<h1 class="header">I am</h1>
-					</div>
-					<img src="img/me.jpeg" id="me">
-					<p>
-						I am an entry level full stack developer.<br>
-						I can build dynamic web applications<br>
-						 with back-end implementations.
-					</p>
-				</div>
-				<div class="flex-50">
-					<div>
-						<h1 class="header">I speak</h1>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 80%">
-							<span class="tag">HTML</span>
-						</div>
-						<span class="padding">80%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 70%">
-							<span class="tag">CSS</span>
-						</div>
-						<span class="padding">70%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 70%">
-							<span class="tag">Javascript</span>
-						</div>
-						<span class="padding">70%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 60%">
-							<span class="tag">React JS</span>
-						</div>
-						<span class="padding">60%</span>
-					</div>	
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 70%">
-							<span class="tag">Node JS</span>
-						</div>
-						<span class="padding">70%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 60%">
-							<span class="tag">Python</span>
-						</div>
-						<span class="padding">60%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 50%">
-							<span class="tag">MongoDB</span>
-						</div>
-						<span class="padding">50%</span>
-					</div>
-					<div class=" container container-row flex-bar">
-						<div class="fill" style="width: 50%">
-							<span class="tag">SQL</span>
-						</div>
-						<span class="padding">50%</span>
-					</div>			
-				</div>
+	<div class="overflow">
+		<section class="intro container" id="home">
+			<div class="container">
+					<h1 class="animate-twist"><span>H</span><span>i</span><span>.</span> <span>I</span><span>'</span><span>m</span> <span>V</span><span>i</span><span>c</span><span>t</span><span>o</span><span>r</span><span>.</span><br>
+						<span>I</span> <span>l</span><span>i</span><span>v</span><span>e</span> <span>i</span><span>n</span> <span>A</span><span>u</span><span>s</span><span>t</span><span>i</span><span>n</span><span>.</span><br>
+						<span>I</span> <span>L</span><span>o</span><span>v</span><span>e</span> <span>i</span><span>t</span><span>!</span><span>!</span></h1>
+					<a class="arr-button-scroll"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
 			</div>
-			<div class="about2">
-				<h1 class="header">I learned</h1>
-				<div class="container container-row wrap">
-						<div class="school">
-							<img src="img/gt.png" id="gt">
-							<p>
-								<strong><i></i>Georgia Institute of Technology</strong><br>
-								Master of Science in Computer Science<br>
-								Present - 2021
-							</p>
-						</div>
-						<div class="school">
-							<img src="img/udacity.jpg" id="udacity">
-							<p>
-								<strong>Udacity</strong><br>
-								Full Stack Web Developer Nanodegree<br>
-								<i class="fa fa-graduation-cap"></i> 2018
-							</p>
-						</div>
-						<div class="school">
-							<img src="img/uml.png" id="uml">
-							<p>
-								<strong>University of Massachusetts Lowell</strong><br>
-								Bachelor of Science in Plastics Engineering<br>
-								<i class="fa fa-graduation-cap"></i> 2006 - 2010
-							</p>
-						</div>
-				</div>
+		</section>
+		<nav class="container nav-bar">
+			<div id="hamburger-icon">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div>
-			<h1 class="header-top">Contact</h1>
-		</div>
-		<div class="container">
-			<h1>Give me a try ?</h1>
-		</div>
-		<form id="contact-form" class="container">
-			<input type="text" name="name" placeholder="Name">
-			<input type="email" name="email" placeholder="Email">
-			<textarea type="text" name="message" placeholder="Your message"></textarea>
-			<div class="success-modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Your message is sent.</p>
-				</div>
+			<div class="container container-row nav-head">
+				<a class="nav-title bold" href="#home">Home</a>
+				<a class="nav-title bold about-me">About Me</a>
+				<a class="nav-title bold contact">Contact</a>
 			</div>
-			<button type="submit">Submit</button>
-		</form>
-	</section>
-	<footer>
-		<div class="container">
-			<a href="#home"><i class="fa fa-chevron-circle-up fa-4x"></i></a>
-		</div>
-		<div class="container container-row">
+		</nav>
+		<section id="about">
 			<div>
-				<a href="https://www.linkedin.com/in/victorvnhem/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+				<h1 class="header-top">About Me</h1>
 			</div>
+			<div class="about-body">
+				<div class="container container-row wrap wrapper">
+					<div class="flex-50 info-me">
+						<div>
+							<h1 class="header">I am</h1>
+						</div>
+						<img src="img/me.jpeg" id="me">
+						<p>
+							I am an entry level full stack developer.<br>
+							I can build dynamic web applications<br>
+							with back-end implementations.
+						</p>
+					</div>
+					<div class="flex-50">
+						<div>
+							<h1 class="header">I speak</h1>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 80%">
+								<span class="tag">HTML</span>
+							</div>
+							<span class="padding">80%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 70%">
+								<span class="tag">CSS</span>
+							</div>
+							<span class="padding">70%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 70%">
+								<span class="tag">Javascript</span>
+							</div>
+							<span class="padding">70%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 60%">
+								<span class="tag">React JS</span>
+							</div>
+							<span class="padding">60%</span>
+						</div>	
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 70%">
+								<span class="tag">Node JS</span>
+							</div>
+							<span class="padding">70%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 60%">
+								<span class="tag">Python</span>
+							</div>
+							<span class="padding">60%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 50%">
+								<span class="tag">MongoDB</span>
+							</div>
+							<span class="padding">50%</span>
+						</div>
+						<div class=" container container-row flex-bar">
+							<div class="fill" style="width: 50%">
+								<span class="tag">SQL</span>
+							</div>
+							<span class="padding">50%</span>
+						</div>			
+					</div>
+				</div>
+				<div class="about2">
+					<h1 class="header">I learned</h1>
+					<div class="container container-row wrap">
+							<div class="school">
+								<img src="img/gt.png" id="gt">
+								<p>
+									<strong><i></i>Georgia Institute of Technology</strong><br>
+									Master of Science in Computer Science<br>
+									Present - 2021
+								</p>
+							</div>
+							<div class="school">
+								<img src="img/udacity.jpg" id="udacity">
+								<p>
+									<strong>Udacity</strong><br>
+									Full Stack Web Developer Nanodegree<br>
+									<i class="fa fa-graduation-cap"></i> 2018
+								</p>
+							</div>
+							<div class="school">
+								<img src="img/uml.png" id="uml">
+								<p>
+									<strong>University of Massachusetts Lowell</strong><br>
+									Bachelor of Science in Plastics Engineering<br>
+									<i class="fa fa-graduation-cap"></i> 2006 - 2010
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
 			<div>
-				<a href="https://github.com/nvictordev" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				<h1 class="header-top">Contact</h1>
 			</div>
-		</div>
-		Victor Nhem @2018
-	</footer>
+			<div class="container">
+				<h1>Give me a try ?</h1>
+			</div>
+			<form id="contact-form" class="container">
+				<input type="text" name="name" placeholder="Name">
+				<input type="email" name="email" placeholder="Email">
+				<textarea type="text" name="message" placeholder="Your message"></textarea>
+				<div class="success-modal overflow">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p>Your message is sent.</p>
+					</div>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+		<footer>
+			<div class="container">
+				<a href="#home"><i class="fa fa-chevron-circle-up fa-4x"></i></a>
+			</div>
+			<div class="container container-row">
+				<div>
+					<a href="https://www.linkedin.com/in/victorvnhem/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+				</div>
+				<div>
+					<a href="https://github.com/nvictordev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+				</div>
+			</div>
+			Victor Nhem @2018
+		</footer>
+	</div>
 </body>
 </html>
