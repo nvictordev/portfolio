@@ -5,7 +5,7 @@ $(function() {
     if (this.hash !== "") {
       event.preventDefault();
       let hash = this.hash;
-      $('html').animate({
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
         window.location.hash = hash;
@@ -42,10 +42,15 @@ $(function() {
     if (winPos >= navHeight && winPos > recentPos) {
       $('nav').addClass('fixed');
     } 
-    if (winPos < navHeight && winPos < recentPos) {
+    if (winPos < navHeight) {
       $('nav').removeClass('fixed');
     }
     recentPos = winPos;
   })
+
+  //Hamburger bars
+  $('#hamburger-icon').click(function() {
+    $(this).toggleClass('open');
+  });
 
 })
