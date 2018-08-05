@@ -50,7 +50,22 @@ $(function() {
 
   //Hamburger bars
   $('#hamburger-icon').click(function() {
-    $(this).toggleClass('open');
+    if ($('#mobile-menu').hasClass('opened')) {
+      $('#mobile-menu').removeClass('opened');
+      $('#mobile-menu').addClass('closed');
+      $('#hamburger-icon').removeClass('open');
+    } else {
+      $('#hamburger-icon').addClass('open');
+      $('#mobile-menu').removeClass('closed');
+      $('#mobile-menu').addClass('opened');
+    }
   });
+
+  // Hide mobile menu modal
+  $('#mobile-menu > a').click(function () {
+    $('#mobile-menu').removeClass('opened');
+    $('#mobile-menu').addClass('closed');
+    $('#hamburger-icon').removeClass('open');
+  })
 
 })

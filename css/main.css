@@ -242,7 +242,13 @@ font-size: 2em;
 		left: 5vw;
 		display: block;
 		position: absolute;
+		z-index: 1;
 	}
+
+	nav #mobile-menu {
+		display: block;
+	}
+	
 	nav .nav-head {
 		display: none;
 	}
@@ -265,6 +271,34 @@ font-size: 2em;
 	display: block;
 	transform: rotate(0deg);
 	transition: .5s ease-in-out;
+}
+
+#mobile-menu {
+	background-color: black;
+	padding-bottom: 20px;
+	top: 45px;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+	transition: transform 1s ease-in-out;
+	display: none;
+}
+
+#mobile-menu a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding-bottom: 1vw;
+}
+
+#mobile-menu.opened {
+	transform: translate(0);
+	opacity: 1;
+}
+
+#mobile-menu.closed {
+	transform: translate(0, -50%);
+	opacity: 0;
 }
 
 #hamburger-icon span:nth-child(1) {
