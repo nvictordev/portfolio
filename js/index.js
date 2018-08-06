@@ -42,7 +42,7 @@ $(function() {
     if (winPos >= navHeight && winPos > recentPos) {
       $('nav').addClass('fixed');
     } 
-    if (winPos < navHeight) {
+    if (winPos < navHeight && winPos < recentPos) {
       $('nav').removeClass('fixed');
     }
     recentPos = winPos;
@@ -67,5 +67,23 @@ $(function() {
     $('#mobile-menu').addClass('closed');
     $('#hamburger-icon').removeClass('open');
   })
+
+  // On scroll animations
+  $(window).on('scroll', onScroll);
+  let windowPadding = $(window).height();
+  function onScroll() {
+    $('.onScroll:not(.animated)').each(function() {
+      if ($(window).scrollTop() + windowPadding > $(this).offset().top) {
+        if ($(this).data('timeout')) {
+          let $this = $(this);
+          window.setTimeout(function() {
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout')));
+        } else {
+          $(this).addClass('animated ' + $(this).data('animation'));
+        }
+      }
+    })
+  }
 
 })

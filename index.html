@@ -7,8 +7,10 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<script src="js/index.js"></script>
 </head>
 <body>
@@ -18,7 +20,7 @@
 					<h1 class="animate-twist"><span>H</span><span>i</span><span>.</span> <span>I</span><span>'</span><span>m</span> <span>V</span><span>i</span><span>c</span><span>t</span><span>o</span><span>r</span><span>.</span><br>
 						<span>I</span> <span>l</span><span>i</span><span>v</span><span>e</span> <span>i</span><span>n</span> <span>A</span><span>u</span><span>s</span><span>t</span><span>i</span><span>n</span><span>.</span><br>
 						<span>I</span> <span>L</span><span>o</span><span>v</span><span>e</span> <span>i</span><span>t</span><span>!</span><span>!</span></h1>
-					<a class="arr-button-scroll"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
+					<a class="arr-button-scroll onScroll" data-animation="fadeInDown"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</section>
 		<nav class="container nav-bar">
@@ -45,11 +47,11 @@
 			<div class="about-body">
 				<div class="container container-row wrap wrapper">
 					<div class="flex-50 info-me">
-						<div>
+						<div class="onScroll" data-animation="slideInLeft" data-timeout="500">
 							<h1 class="header">I am</h1>
 						</div>
-						<img src="img/me.jpeg" id="me">
-						<p>
+						<img class="onScroll" data-animation="zoomIn" data-timeout="1000" id="me" src="img/me.jpeg">
+						<p class="onScroll" data-animation="fadeInUp" data-timeout="1200">
 							I am an entry level full stack developer.<br>
 							I can build dynamic web applications<br>
 							with back-end implementations.
@@ -57,51 +59,51 @@
 					</div>
 					<div class="flex-50">
 						<div>
-							<h1 class="header">I speak</h1>
+							<h1 class="header onScroll" data-animation="slideInRight" data-timeout="2000">I speak</h1>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 80%">
 								<span class="tag">HTML</span>
 							</div>
 							<span class="padding">80%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 70%">
 								<span class="tag">CSS</span>
 							</div>
 							<span class="padding">70%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 70%">
 								<span class="tag">Javascript</span>
 							</div>
 							<span class="padding">70%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 60%">
 								<span class="tag">React JS</span>
 							</div>
 							<span class="padding">60%</span>
 						</div>	
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 70%">
 								<span class="tag">Node JS</span>
 							</div>
 							<span class="padding">70%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 60%">
 								<span class="tag">Python</span>
 							</div>
 							<span class="padding">60%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 50%">
 								<span class="tag">MongoDB</span>
 							</div>
 							<span class="padding">50%</span>
 						</div>
-						<div class=" container container-row flex-bar">
+						<div class="container container-row flex-bar">
 							<div class="fill" style="width: 50%">
 								<span class="tag">SQL</span>
 							</div>
@@ -110,9 +112,9 @@
 					</div>
 				</div>
 				<div class="about2">
-					<h1 class="header">I learned</h1>
+					<h1 class="header onScroll" data-animation="slideInLeft" data-timeout="500">I learned</h1>
 					<div class="container container-row wrap">
-							<div class="school">
+							<div class="school onScroll" data-animation="flipInY" data-timeout="1000">
 								<img src="img/gt.png" id="gt">
 								<p>
 									<strong><i></i>Georgia Institute of Technology</strong><br>
@@ -120,7 +122,7 @@
 									Present - 2021
 								</p>
 							</div>
-							<div class="school">
+							<div class="school onScroll" data-animation="flipInY" data-timeout="1500"">
 								<img src="img/udacity.jpg" id="udacity">
 								<p>
 									<strong>Udacity</strong><br>
@@ -128,7 +130,7 @@
 									<i class="fa fa-graduation-cap"></i> 2018
 								</p>
 							</div>
-							<div class="school">
+							<div class="school onScroll" data-animation="flipInY" data-timeout="1500"">
 								<img src="img/uml.png" id="uml">
 								<p>
 									<strong>University of Massachusetts Lowell</strong><br>

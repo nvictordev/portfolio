@@ -105,7 +105,6 @@
 	animation-delay: 1.8s;
 }
 
-
 .animate-twist span {
 	display: inline-block;
 	opacity: 0;
@@ -118,6 +117,11 @@
 	transform: translate(0) scale(1);
 	opacity: 1;
 	}
+}
+
+/* Body Scroll Animations */
+.onScroll {
+	opacity: 0;
 }
 
 /* Main Content */
@@ -248,7 +252,7 @@ font-size: 2em;
 	nav #mobile-menu {
 		display: block;
 	}
-	
+
 	nav .nav-head {
 		display: none;
 	}
