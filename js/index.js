@@ -83,7 +83,47 @@ $(function() {
           $(this).addClass('animated ' + $(this).data('animation'));
         }
       }
-    })
-  }
+    });
+
+    $('.flex-bar').each(function() {
+      if ($(window).scrollTop() + windowPadding > $(this).offset().top) {
+        let self = $(this);
+        $(this).find('.fill').animate({
+          width: $(this).attr('data-percentage')
+        }, 2000);
+        $(this).find('.percent').animate({
+          left: $(this).attr('data-percentage')
+        }, {
+          duration: 2000,
+          step: function(now, fx) {
+            let percent = Math.round(now);
+            self.find('.percent').html(percent + '%');
+          }
+        });
+      }
+    });
+  };
 
 })
+
+
+// $(document).ready(function() {
+//   $(document).on('scroll', function() {
+//     if ($(window).scrollTop() > $('.flex-bar').height()) {
+//       $('.flex-bar').each(function() {
+//         $(this).find('.fill').animate({
+//           width: $(this).attr('data-percentage')
+//         }, 2000);
+//         $(this).find('.percent').animate({
+//           left: $(this).attr('data-percentage')
+//         }, {
+//           duration: 2000,
+//           step: function(now, fx) {
+//             let percent = Math.round(now);
+//             $('.percent').html(percent + '%');
+//           }
+//         });
+//       });
+//     };
+//   })
+// })

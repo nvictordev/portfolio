@@ -344,11 +344,17 @@ font-size: 2em;
 	justify-content: start;
 	position: relative;
 	height: 2em;
+	overflow: hidden;
 }
 
 .fill {
 	background-color: darkgray;
 	height: 2em;
+	width: 0%;
+}
+
+span .percent {
+	transform: translateX(-50%);
 }
 
 section:nth-of-type(2) .tag {
