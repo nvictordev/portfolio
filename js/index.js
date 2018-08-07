@@ -28,7 +28,6 @@ $(function() {
   // Modal screen handle
   $('#contact-form').submit(function(e) {
     $('.success-modal').addClass('modal-display');
-    e.preventDefault();
   })
   $('.close').click(function() {
     $('.success-modal').removeClass('modal-display');
@@ -105,25 +104,3 @@ $(function() {
   };
 
 })
-
-
-// $(document).ready(function() {
-//   $(document).on('scroll', function() {
-//     if ($(window).scrollTop() > $('.flex-bar').height()) {
-//       $('.flex-bar').each(function() {
-//         $(this).find('.fill').animate({
-//           width: $(this).attr('data-percentage')
-//         }, 2000);
-//         $(this).find('.percent').animate({
-//           left: $(this).attr('data-percentage')
-//         }, {
-//           duration: 2000,
-//           step: function(now, fx) {
-//             let percent = Math.round(now);
-//             $('.percent').html(percent + '%');
-//           }
-//         });
-//       });
-//     };
-//   })
-// })
