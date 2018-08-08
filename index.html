@@ -150,9 +150,9 @@
 				<h1>Give me a try ?</h1>
 			</div>
 			<form id="contact-form" class="container" method="POST" action="https://formspree.io/787sna@gmail.com">
-				<input type="text" name="name" placeholder="Name">
-				<input type="email" name="email" placeholder="Email">
-				<textarea type="text" name="message" placeholder="Your message"></textarea>
+				<input type="text" name="name" maxlength="50" placeholder="Name" required>
+				<input type="email" name="email" maxlength="60" placeholder="Email" required>
+				<textarea type="text" name="message" maxlength="200" rows="6" placeholder="Your message"></textarea>
 				<div class="success-modal overflow">
 					<div class="modal-content">
 						<span class="close">&times;</span>

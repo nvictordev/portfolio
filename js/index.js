@@ -25,14 +25,14 @@ $(function() {
     }, 800);
   });
 
-  // Modal screen handle
-  $('#contact-form').submit(function(e) {
+  // Form submission handling
+  $('#contact-form').submit(function() {
     $('.success-modal').addClass('modal-display');
   })
   $('.close').click(function() {
     $('.success-modal').removeClass('modal-display');
-  })
-  
+  })      
+
   // Nav bar to stay on top of screen
   let navHeight = $('nav').position().top;
   $(window).on('scroll', function() {
